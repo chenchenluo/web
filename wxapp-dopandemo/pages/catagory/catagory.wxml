@@ -1,0 +1,46 @@
+<!--pages/catagory/catagory.wxml-->
+<view class="content">
+   <view class="topBanner">
+      <view class="bannerItem" bindtap='clickChangeTap' data-idx="1">全部</view>
+      <view class="bannerItem" bindtap='clickChangeTap' data-idx="2">地区</view>
+      <view class="bannerItem" bindtap='clickChangeTap' data-idx="3">类别</view>
+      <view class="searchBox" bindtap="searchtap"><image src="../../image/search1.png"></image></view>       
+   </view>
+   <!--全部分类box-->
+   <view class="allBox" hidden='{{allBoxshow}}'>
+       <view class="boxItem">
+         <view class="boxtitle">全部:</view>
+         <view class="itemBox">
+            <view bindtap='selectData' data-type="喜剧">喜剧</view>
+            <view bindtap='selectData' data-type="悲剧">悲剧</view>
+            <view bindtap='selectData' data-type="悬疑">悬疑</view>
+            <view bindtap='selectData' data-type="恐怖剧">恐怖剧</view>
+            <view bindtap='selectData' data-type="科幻">科幻</view>
+         </view>
+       </view>
+       <view class="boxItem">
+         <view class="boxtitle">全部:</view>
+         <view class="itemBox">
+            <view bindtap='selectData' data-type="大陆">大陆</view>
+            <view bindtap='selectData' data-type="美国">美国</view>
+            <view bindtap='selectData' data-type="英国">英国</view>
+            <view bindtap='selectData' data-type="日本">日本</view>
+            <view bindtap='selectData' data-type="俄罗斯">俄罗斯</view>
+            <view bindtap='selectData' data-type="泰国">泰国</view>
+            <view bindtap='selectData' data-type="缅甸">缅甸</view>
+            <view bindtap='selectData' data-type="非洲">非洲</view>
+         </view>
+       </view>
+   </view>
+
+   <!--地区分类box-->
+   <view class="allBox" hidden='{{typeBoxshow}}'>
+      <view>地区分类</view>
+   </view>
+    <!--类别分类box-->
+   <view class="allBox" hidden='{{localBoxshow}}'>
+      <view>地区分类</view>
+   </view>
+  <!--产品展示-->
+  <view class="detailShow">{{typeData}}</view>
+</view> 

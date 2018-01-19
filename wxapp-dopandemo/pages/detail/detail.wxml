@@ -1,0 +1,32 @@
+<!--pages/detail/detail.wxml-->
+<!--电影详情-->
+<view class="head">   
+  <image src="{{movie.img}}" class="movie-img"></image>
+  <view class="info">
+    <view class="movie-name">{{movie.name}}</view>
+    <view class="movie-director">导演：{{movie.director}}</view>
+    <view class="movie-year">上映时间：{{movie.year}}</view>
+    <view class="movie-adress">{{movie.address}}</view>
+    <view class="movie-tag">{{movie.tag}}</view>
+    <view class="oparate">
+       <view class="collect" bindtap='collectTap' wx:if="{{collection}}" style="background:#43CD80">取消收藏</view>
+       <view class="collect" bindtap='collectTap' wx:else style="background:rgba(0,0,0,.4)">收藏</view>
+       <view class="share" bindtap='shareTap'>分享</view>
+    </view>
+  </view>
+</view>
+<view class="summary">
+  <view class="partTitle">剧情：</view>
+  <view class="content">{{movie.summary}}</view>
+</view>
+<view class="casts">
+  <view class="partTitle">主演</view>
+  <view class="castsContent">
+    <block wx:for="{{movie.casts}}">
+     <view class="casts-item">
+         <image src="{{item.avatars}}"></image>
+         <view class="cast-name">{{item.name}}</view>
+     </view>
+     </block>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<!--pages/person/person.wxml-->
+<view class="parthead" style="background:url(../../image/pic14.jpg)">
+   <view class="myLogo" catchtap='onchangeLogoTap'>
+     <image src="{{logo}}"></image>
+   </view>
+</view>
+<view class="addressInfo">
+   <text>{{address}}</text>
+   <button bindtap='getAddressTap' size="mini" type="default" hover-class='light' hover-start-time="10">获取地址</button>    
+</view>
+<view class="addressInfo">
+   <text>联系电话：{{tel}}</text>
+   <button bindtap='call' size="mini" type="default" hover-class='light' hover-start-time="10">拨打客服</button>    
+</view>
+ 
+ <form bindsubmit='formSumbit'>
+    <view class="partTitle">填写相关信息</view>
+    <view class="infoItem">
+      <text>姓名：</text>
+      <input class="name"  ></input>
+    </view>
+    <view class="infoItem">
+     <text>电话：</text>
+      <input class="phone"></input>
+    </view>
+     <button size="mini" form-type='submit'>提交</button>
+ </form>

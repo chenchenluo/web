@@ -1,0 +1,11 @@
+<!--pages/search/search.wxml-->
+<view class="header-box">
+   <form >
+     <view class="searchWrap">
+       <icon type="search" size='20' ></icon> 
+      <!-- <view class="search-icon"></view> -->
+      <input type="text" class="seachbox" placeholder='电影' placeholder-style='placeStyle'></input>
+      </view>
+   </form>
+   <view bindtap='backTap' class="backBtn" size='mini'>取消</view>
+</view>

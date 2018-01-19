@@ -1,0 +1,20 @@
+<!--index.wxml-->
+
+ <!--swiper-->
+ <swiper indicator-dots='true' indicator-color='#f5f5f5' indicator-active-color='#43CD80' autoplay='true' interval='5000' circular='true'>
+    <block wx:for="{{imgUrl}}" wx:for-index="{{idx}}" > 
+       <swiper-item>
+         <image src="{{item}}"   class="swiperImg"></image>
+       </swiper-item>      
+    </block>
+ </swiper>
+ <view class="part"> 
+   <block wx:for="{{movie_rank}}">    
+     <view class="item" bindtap='onShowdetail' data-idx="{{item.id}}">
+       <image class="item-images" src="{{item.img}}"></image>
+       <view class="item-name">{{item.title}}</view>
+       <view class="item-tag">{{item.tag}}</view>
+     </view>
+     </block>
+ </view>
+

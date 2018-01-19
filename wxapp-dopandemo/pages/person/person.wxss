@@ -1,0 +1,71 @@
+/* pages/person/person.wxss */
+.parthead{
+  width:100%;
+  height:350rpx;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.myLogo{
+  width:150rpx;
+  height:150rpx;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+   
+}
+.myLogo image{
+  width:100%;
+  height:100%;
+  border-radius: 50%
+
+}
+.addressInfo{
+  margin-top:10rpx;
+  width:100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding:0px 10px;
+  font-size:28rpx;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.addressInfo text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width:500rpx;
+}
+.addressInfo button{
+  margin:0 40rpx; 
+}
+.light{
+  background-color:#43CD80;
+  opacity: .7;
+  color:#fff;
+
+}
+form{
+  padding:20rpx 15rpx;
+  display: block
+}
+.partTitle{
+  font-size:28rpx;
+}
+.infoItem{
+  margin:15rpx 0px;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
+.infoItem input{
+  border:1px solid #eee;
+  padding-left:10rpx;
+  font-size:28rpx;
+}
+.infoItem text{
+  font-size:28rpx;
+}
