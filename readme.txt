@@ -1,2 +1,1 @@
-git is a system
-git engit
+study git and github
