@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<import src="../../template/productList.wxml" />
+
+
+<swiper indicator-dots='false' autoplay='true' circular='true'>
+   <block wx:for="{{bannerImgUrl}}">
+      <swiper-item><image src="{{item}}" mode="scaleToFill" class="swiperImg"></image></swiper-item>
+   </block>
+</swiper>
+<!--search-->
+<view class="search">
+   <view class="searchBox">
+      <icon type="search" size="20"></icon>
+      <text>搜索商品</text>
+   </view>
+</view>
+<!--商城活动中心-->
+<view class="activity">
+   <view class="bigPost"><image src="../../img/swiper/timeline07.jpg" ></image></view>
+   <view class="twoPost">
+      <image src="../../img/product/whyimg04.jpg"></image>
+      <image src="../../img/product/whyimg03.jpg"></image>
+   </view>
+</view>
+<!--商品展示-->
+<view class="sectionTitle">最新产品</view>
+<view class="products">
+   <block wx:for="{{products}}">
+      <template is="products" data="{{...item}}" />
+   </block>
+<!-- 
+     <view class="productItem">
+       <image src="../../img/product/whyimg04.jpg" class="productImg"></image>      
+       <view class="name_price">
+          <text>照相机照相机照相机照相机照相机</text>
+          <text>￥9090</text>
+      </view>
+      <view class="operate">
+          <view class="collect"><image src="../../img/icon/collect.png"></image></view>
+          <view class="buyBtn">购买</view>
+      </view>          
+    </view> -->
+
+
+</view>

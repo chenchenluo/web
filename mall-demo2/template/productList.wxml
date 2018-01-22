@@ -1,0 +1,21 @@
+<!--
+ 两列多行展示模板
+imgUrl:商品图片
+name：商品名字
+price：商品价格
+
+-->
+<template name="products">
+   <view class="productItem">
+       <image src="{{imgUrl}}" class="productImg"></image>      
+       <view class="name_price">
+          <text>{{name}}</text>
+          <text>￥{{price}}</text>
+      </view>
+      <view class="operate">
+          <view class="collect" wx:if="{{iscollect}}"><image src="../../img/icon/collect.png"></image></view>
+          <view class="collect" wx:else><image src="../../img/icon/collect_selected.png"></image></view>
+          <view class="buyBtn">购买</view>
+      </view>          
+    </view>   
+</template>
