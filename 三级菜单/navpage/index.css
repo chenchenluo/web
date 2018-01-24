@@ -1,0 +1,220 @@
+html,body{
+	width:100%;
+	height:100%;
+	font-family: "微软雅黑";
+	padding:0;
+	margin:0;
+	color:#333;
+}
+*{
+	margin: 0 auto;
+}
+ul li{
+	list-style: none;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+.container{
+	width:100%;
+	height:100%;
+	background:url(image/loock-boock.jpg) no-repeat center center;
+}
+.main{
+   width:1400px;
+   height:auto;
+   overflow: hidden;
+   
+} 
+header{
+	padding-top:30px;
+}
+.logo{
+	float:left;
+	font-size: 30px;
+	font-weight: 600;
+	color:#fff;
+}
+.currentTime{
+	float:right;
+}
+.clock{
+	font-size:38px;
+	color:#fff;
+	font-weight: 600;
+}
+.dateBox{
+	font-size:21px;
+	color:#fff;
+}
+ 
+#nav{
+	width:100%;
+	height:auto;	 
+	overflow: hidden;
+	padding-top:70px;
+	padding-bottom: 20px;
+}
+.banner1{
+	float:left;
+}
+
+#sort1 li{
+	width:280px;
+	height:165px;
+	background:rgba(0,0,0,.5);
+	border-radius: 10px;
+	-moz-box-shadow:-1px 0px 15px #666; 
+	-webkit-box-shadow:-1px 0px 15px #666;
+	 box-shadow:-1px 0px 15px #666;
+	 margin-bottom: 25px;
+	 font-size:27px;
+	 color:#fff;
+	 font-weight:600;
+	 text-align: center;
+	 line-height: 165px;
+	 cursor: pointer;
+}
+#sort1 li.current{
+	background:rgba(0,191,255,.7);
+	color:#fcff00;
+}
+.banner2{
+	width:260px;
+	height:720px;
+	float:left;
+	background:rgba(5,25,69,.8);
+	-moz-box-shadow:-1px 0px 15px #666; 
+	-webkit-box-shadow:-1px 0px 15px #666;
+	box-shadow:-1px 0px 15px #666;
+	position: relative;
+	border-radius: 10px;
+	margin-left:16px;
+	box-sizing: border-box;
+	padding:20px 15px;
+	display: none;
+	 
+}
+.arrow{
+	position: absolute;	 
+	width: 0;
+    height: 0;
+    border-top:15px solid transparent;
+    border-right: 15px solid rgba(25,25,112,.8);
+    border-bottom: 15px solid transparent;
+    left:-15px; 
+    display: block;
+    display: none;
+}
+.arrow0{
+	 top:72.5px;  
+}
+.arrow1{
+	 top:253.5px;  
+}
+.arrow2{
+	 top:444.5px;  
+}
+#sort2 li{
+	width:100%;
+	padding:40px 0;
+	text-align: center;
+	font-size:25px;
+	cursor: pointer;
+	color:#fff;
+	font-weight:600;	
+}
+#sort2 li.active{
+	border-top:2px solid #999;
+	border-bottom: 2px solid #999;
+	color:#d99709
+}
+.banner3{
+	width:825px;
+	height:720px;
+	background:rgba(5,25,69,.7);
+	float:left;
+	border-radius: 10px;
+	-moz-box-shadow:0px 0px 15px #333; 
+	-webkit-box-shadow:0px 0px 15px #333;
+	box-shadow:0px 0px 15px #333;
+	margin-left:15px;
+	box-sizing: border-box;
+	padding-top:15px;
+	display: none;
+}
+
+#sort3 li{
+	height:65px;
+	line-height:65px;
+	width:100%;
+	font-size:25px;	 
+	padding-left:15px;
+	box-sizing: border-box;
+	color:#fff;
+}
+.title,.type,.time{
+	width:20%;
+	display:inline-block;
+	font-size:24px;
+	text-align: center;	 
+	vertical-align: bottom
+}
+ .title{
+ 	width:50%;
+ 	color:#fff;
+ 	text-decoration: none;	
+ 	overflow: hidden; 
+ 	text-overflow: ellipsis;
+ 	white-space: nowrap
+ }
+ #sort3{
+ 	width:800px;
+ 	float:left;
+ }
+#sort3 li:hover{
+	background:#0163d9;
+	color:#d99709;
+	background: -webkit-linear-gradient(left,#0163d9,#051945); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(left,#0163d9,#051945); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(left,#0163d9,#051945); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right,#0163d9,#051945); /* 标准的语法（必须放在最后）*/
+}
+#sort3 li:hover a{
+	color:#d99709;
+}
+.btnBox{
+	width:25px;
+	float:right;
+	height:100%;
+	position: relative;
+}
+#pre{
+	width: 0;
+    height: 0;
+    border-left:10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 17px solid rgba(217,151,9,.8);
+    position: absolute;
+    bottom:40px;
+    left:2px;
+    cursor: pointer;
+}
+#pre:hover{
+	 border-bottom: 17px solid #d99709;
+}
+#next{
+	 width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top:17px solid  rgba(217,151,9,.8);
+     position: absolute;
+    bottom:20px;
+    left:2px;
+    cursor: pointer;
+}
+#next:hover{
+	  border-top:17px solid #d99709;
+}
